@@ -1,0 +1,5 @@
+COM:
+  name: "COM4" # Com port goes here
+  baud: 115200 # Baud rate of Com
+PROJECTCARS:
+  memaddr: “$pcars2$” # Default memory file for Project Cars 2 telemetry 
