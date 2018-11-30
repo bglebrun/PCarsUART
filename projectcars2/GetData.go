@@ -29,7 +29,7 @@ func (d SharedMemory) ExtractData() (SharedMemory, error) {
 	buff := bytes.NewBuffer(b)
 	err = binary.Read(buff, binary.LittleEndian, &d)
 	if err != nil {
-		return d, err
+		return SharedMemory{}, err
 	}
 
 	return d, nil
