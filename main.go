@@ -55,8 +55,9 @@ func main() {
 		}
 		// Project cars shit goes here
 	*/
+
 	for true {
-		d := pcars.GetCarState(conf.ProjectCarsAddr)
+		d := pcars.ExtractData()
 		fmt.Println("RPM: ", d.mRpm, " / ", d.mMaxRPM)
 		fmt.Println("GEAR: ", d.mGear, " / ", d.mNumGears)
 		fmt.Println("SPEED: ", d.mSpeed)
