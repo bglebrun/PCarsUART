@@ -10,6 +10,8 @@ import (
 // DefaultName is Project Cars 2 API name as of Shared Mem ver 9
 const DefaultName = "%pcars2%"
 
+// ExtractData attempts to open the Project Cars 2 memory location,
+// then pulls data written to the file for processing
 func (d SharedMemory) ExtractData() (SharedMemory, error) {
 	var err error
 	err = nil
