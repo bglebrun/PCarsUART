@@ -7,6 +7,7 @@ import (
 	"unsafe"
 )
 
+// Default Project Cars 2 API name as of Shared Mem ver 9
 const DefaultName = "%pcars2%"
 
 func (d SharedMemory) ExtractData() (SharedMemory, error) {
